@@ -1,0 +1,5 @@
+﻿A    B    C    Time
+0    2PIr -    0
+2PIr 0    -    50%
+0    0    2PIr 50%
+0    2PIr 0    100%
