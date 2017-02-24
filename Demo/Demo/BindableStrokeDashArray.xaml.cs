@@ -42,14 +42,14 @@ namespace Demo
 
             if (value >= 0)
             {
-                obj._ellipse.StrokeDashArray = new DoubleCollection() { (value) / obj._ellipse.StrokeThickness, (2 * Math.PI * 50 - value) / obj._ellipse.StrokeThickness };
+                obj._ellipse.StrokeDashArray = new DoubleCollection() { (value) / obj._ellipse.StrokeThickness, (2 * Math.PI * (50 - obj._ellipse.StrokeThickness / 2) - value) / obj._ellipse.StrokeThickness };
             }
             else
             {
                 obj._ellipse.StrokeDashArray = new DoubleCollection()
                 {
                     0,
-                    (2 *Math.PI *50 + value)/ obj._ellipse.StrokeThickness,
+                    (2 *Math.PI *(50 - obj._ellipse.StrokeThickness / 2) + value)/ obj._ellipse.StrokeThickness,
                     (0 - value)/obj._ellipse.StrokeThickness
                 };
             }

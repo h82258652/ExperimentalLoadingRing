@@ -46,12 +46,12 @@ namespace Demo
             animation.KeyFrames.Add(new LinearDoubleKeyFrame()
             {
                 KeyTime = TimeSpan.FromSeconds(1.5),
-                Value = 2 * Math.PI * 50
+                Value = 2 * Math.PI * (50 - Ellipse.StrokeThickness / 2)
             });
             animation.KeyFrames.Add(new LinearDoubleKeyFrame()
             {
                 KeyTime = TimeSpan.FromSeconds(1.5),
-                Value = 0 - 2 * Math.PI * 50
+                Value = 0 - 2 * Math.PI * (50 - Ellipse.StrokeThickness / 2)
             });
             animation.KeyFrames.Add(new LinearDoubleKeyFrame()
             {
