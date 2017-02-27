@@ -1,10 +1,10 @@
 ﻿using System;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Shapes;
-using Demo.Extensions;
+using System.Windows;
+using System.Windows.Media;
+using System.Windows.Shapes;
+using DemoWpf.Extensions;
 
-namespace Demo
+namespace DemoWpf
 {
     public partial class BindableEllipseStrokeDashArray
     {

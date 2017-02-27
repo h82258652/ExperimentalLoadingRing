@@ -3,10 +3,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DemoWpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow"
+        Width="525"
+        Height="350"
+        mc:Ignorable="d">
     <Grid>
-        
+        <Ellipse x:Name="Ellipse"
+                 Width="100"
+                 Height="100"
+                 Loaded="Ellipse_Loaded"
+                 RenderTransformOrigin="0.5,0.5"
+                 Stroke="Black"
+                 StrokeDashArray="0"
+                 StrokeThickness="3">
+            <Ellipse.RenderTransform>
+                <RotateTransform />
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Button HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Click="StartButton_Click"
+                Content="Start" />
     </Grid>
 </Window>

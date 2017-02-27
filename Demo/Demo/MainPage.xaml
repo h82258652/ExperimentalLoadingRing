@@ -8,7 +8,7 @@
         <Ellipse x:Name="Ellipse"
                  Width="100"
                  Height="100"
-                 Loaded="FrameworkElement_OnLoaded"
+                 Loaded="Ellipse_Loaded"
                  RenderTransformOrigin="0.5,0.5"
                  Stroke="Black"
                  StrokeDashArray="0"
@@ -19,7 +19,7 @@
         </Ellipse>
         <Button HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
-                Click="ButtonBase_OnClick"
-                Content="Test" />
+                Click="StartButton_Click"
+                Content="Start" />
     </Grid>
 </Page>
