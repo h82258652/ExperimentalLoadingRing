@@ -64,7 +64,10 @@ namespace DemoWpf
             }
             else
             {
-                _ellipse.StrokeDashArray = new DoubleCollection();
+                _ellipse.StrokeDashArray = new DoubleCollection()
+                {
+                    0
+                };
             }
         }
     }
