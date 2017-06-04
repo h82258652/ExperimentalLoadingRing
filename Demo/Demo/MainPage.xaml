@@ -6,8 +6,8 @@
       mc:Ignorable="d">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Ellipse x:Name="Ellipse"
-                 Width="100"
-                 Height="100"
+                 Width="36"
+                 Height="36"
                  Loaded="Ellipse_Loaded"
                  RenderTransformOrigin="0.5,0.5"
                  Stroke="Black"
